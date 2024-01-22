@@ -1,20 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-small-card',
-  templateUrl: './small-card.component.html',
-  styleUrls: ['./small-card.component.css']
+	selector: 'app-small-card',
+	standalone: true,
+	templateUrl: './small-card.component.html',
+  // add NgbModalConfig and NgbModal to the component providers
+	providers: [NgbModalConfig, NgbModal],
+  imports: [SmallCardComponent]
 })
-export class SmallCardComponent implements OnInit {
 
-  @Input()
-  smallPhoto:string =""
-  @Input()
-  smallTitle:string =""
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SmallCardComponent {
+	
 }
+

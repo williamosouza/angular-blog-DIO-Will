@@ -8,6 +8,15 @@
     font-family: 'Quantico', sans-serif;
 }
 
-a{
+body{
+    background-color: #111111;
+}
+
+hr{
+    color: white;
+    margin: 0;
+}
+
+a{ 
     text-decoration: none;
 }

@@ -1,8 +1,7 @@
 .container__small-card{
     margin-bottom: 15px;
-    width: 600px;
-  
-
+    width: 200px;
+    border: 1px solid white;
 }
 
 .container__small-card-separator{
@@ -15,8 +14,8 @@
 }
 
 .small-card__photo > img {
-    width: 200px;
-    min-width: 200px;
+    width: 20px;
+    min-width: 20px;
     margin-right: 20px;
 }
 
@@ -24,4 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.small-card__tittle > h1 {
+    font-size: 20px;
 }
