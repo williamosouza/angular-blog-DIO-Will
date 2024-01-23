@@ -9,6 +9,8 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SmallCardComponent } from './components/small-card/small-card.component';
+import { ContentComponent } from './pages/content/content.component';
+import { PortifolioComponent } from './pages/portifolio/portifolio.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { SmallCardComponent } from './components/small-card/small-card.component
     MenuTitleComponent,
     BigCardComponent,
     HomeComponent,
-    SmallCardComponent
+    SmallCardComponent,
+    ContentComponent,
+    PortifolioComponent
     ],
   imports: [
     BrowserModule,

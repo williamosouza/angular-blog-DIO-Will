@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-big-card',
   templateUrl: './big-card.component.html',
@@ -13,6 +14,8 @@ export class BigCardComponent implements OnInit {
   cardTitle:string =""
   @Input()
   cardDescription:string = ""
+  @Input()
+  Id:string | null = "0"
   
 
   constructor() { }

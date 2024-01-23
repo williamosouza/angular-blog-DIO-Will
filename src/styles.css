@@ -8,13 +8,9 @@
 }
 
 body{
-    background-color: #1e1e1e;
+    background-color: hsl(0, 0%, 12%);
 }
 
-hr{
-    color: white;
-    margin: 0;
-}
 
 a{ 
     text-decoration: none;
