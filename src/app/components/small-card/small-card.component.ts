@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -9,6 +9,15 @@ import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 })
   
 export class SmallCardComponent {
+	
+	@Input()
+	modalContent:string =""
+	@Input()
+	modalTitle:string =""
+	@Input()
+	buttonTitle:string =""
+		
+	
 	constructor(
 		config: NgbModalConfig,
 		private modalService: NgbModal,
@@ -20,5 +29,8 @@ export class SmallCardComponent {
 
 	open(content:any) {
 		this.modalService.open(content);
+
 	}
+
+
 }

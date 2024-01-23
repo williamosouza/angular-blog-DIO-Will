@@ -1,12 +1,26 @@
 .container__articles{
     margin-top: 30px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-header{
+.articles__others{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.container__title{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.articles__main{
     display: flex;
     justify-content: center;
 }
-
