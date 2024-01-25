@@ -1,16 +1,51 @@
-.container__menu-bar {
+.container__menu-bar{
     margin-top: 15px;
     display: flex;
+    justify-content:space-between ;
+    
+    width: 100%;
+    
+}
+
+.container__menu-bar> h4{
+    margin-left: 20px;
+    
+}
+
+
+.container__menu-buttons {
+    display: flex;
     justify-content: center;
+    
+    
   
 }
 
-.container__menu-bar > ul {
+.container__menu-buttons > ul {
     display: flex;
     flex-direction: row;
 }
 
-.container__menu-bar > ul li {
+.container__menu-buttons > ul li {
     margin-right: 20px;
     list-style: none;
+}
+
+.activeButton{
+    background-color: blue;
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+.activeText{
+    color: white;
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+
+.buttonHome{
+    padding-left:1rem;
+    padding-right: 1rem;
+    border-radius: 5%;
+    
+    
 }

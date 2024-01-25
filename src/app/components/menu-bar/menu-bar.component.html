@@ -1,12 +1,18 @@
 <div class="container__menu-bar">
-    <ul>
-        <li><a href="">Linkedin</a></li>
-        <li><samp>|</samp></li>
-        <li><a href="">Github</a></li>
-        <li><samp>|</samp></li>
-        <li><a href="">Instagram</a></li>
+    <h4>WILLIAM SOUZA</h4>
 
-    </ul>
+    <div class="container__menu-buttons">
+        <ul>
+            <li class="buttonHome" routerLinkActive="activeButton" [routerLinkActiveOptions]="{exact: true}">
+                <a [routerLink]="['']" routerLinkActive="activeText"   [routerLinkActiveOptions]="{exact: true}">HOME</a>
+            </li>
+                
+            <li class="buttonHome" routerLinkActive="activeButton" [routerLinkActiveOptions]="{exact: true}">
+                <a [routerLink]="['/portifolio']" routerLinkActive="activeText" [routerLinkActiveOptions]="{exact: true}">PORTFOLIO</a>
+            </li>
 
-</div>
+        </ul>
 
+    </div>
+
+</div> 

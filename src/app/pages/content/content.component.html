@@ -5,8 +5,8 @@
     <div class="content__title">
         <h2>{{contentTitle}}</h2>
     </div>
-    <div class="content">
-        <p>{{content}}</p>
+    <div class="content" [innerHTML]="content">
+       
     </div>
-    <a [routerLink]="['']"> << VOLTAR </a>
+    <a [routerLink]="['/portifolio']"> << VOLTAR </a>
 </div>

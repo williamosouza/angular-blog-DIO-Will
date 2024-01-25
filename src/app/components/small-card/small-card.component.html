@@ -3,8 +3,8 @@
 		<h4 class="modal-title" id="modal-basic-title">{{modalTitle}}</h4>
 		
 	</div>
-	<div class="modal-body" style="background-color: hsl(0, 0%, 12%)">
-		<p>{{modalContent}}</p>
+	<div class="modal-body" style="background-color: hsl(0, 0%, 12%); text-align: justify;" [innerHTML]="modalContent">
+		
 	</div>
 	<div class="modal-footer" style="background-color: hsl(0, 0%, 12%)">
 		<button type="button" class="btn btn-secondary" aria-label="Close" (click)="d('Cross click')">Fechar</button>
@@ -13,4 +13,4 @@
 	
 </ng-template>
 
-<button class="btn btn-lg btn-outline-primary" style="width: 250px" (click)="open(content)">{{buttonTitle}}</button>
+<button class="btn btn-lg btn-outline-primary" style="width: 250px;" (click)="open(content)">{{buttonTitle}}</button>

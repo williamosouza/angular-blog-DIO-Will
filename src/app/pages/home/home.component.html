@@ -8,26 +8,40 @@
 
 <div class="container__articles">
    <div class="articles__others">
-        <span>TESTE</span>
+        <div class="image1">
+            <img src="assets/image/montanha.png" alt="">
+        </div>
         <app-small-card
-            modalTitle="A maior das Minhas Paixões"
-            modalContent="Sou montanhista, escalador, etc"
-            buttonTitle="MONTANHISTA"
+            modalTitle="A MAIOR DAS MINHAS PAIXÕES"
+            buttonTitle="ESCALADA"
+            contentData="montanha"
         ></app-small-card>
     </div>
     <div class="articles__others">
-        <span>TESTE</span>
+        <div class="image1">
+            <img src="assets/image/medalha.png" alt="">
+        </div>
         <app-small-card
         modalTitle="PROFISSÃO ATUAL"
-        modalContent="TRABALHO COM PROJETOS EM INSTITUIÇÃO ESPORTIVA"
-        buttonTitle="GESTOR ESPORTIVO"
+        buttonTitle="GESTÃO ESPORTIVA"
+        contentData="gestao"
+        ></app-small-card>
+    </div>
+    <div class="articles__others">
+        <div class="image1">
+            <img src="assets/image/dev.png" alt="">
+        </div>
+        <app-small-card
+        modalTitle="DEV EM FORMAÇÃO"
+        buttonTitle="ESTUDANTE DEV"
+        contentData="dev"
         ></app-small-card>
     </div>
 </div>
 
 <div class="container__title">
-    
-    <h2><a [routerLink]="['portifolio']">PORTIFÓLIO</a></h2>
-    
+
+    <h2><a [routerLink]="['portifolio']">PORTFÓLIO</a></h2>
+
 </div>
 

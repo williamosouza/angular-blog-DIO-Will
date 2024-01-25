@@ -11,12 +11,8 @@ body{
     background-color: hsl(0, 0%, 12%);
 }
 
-
 a{ 
     text-decoration: none;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-}
+

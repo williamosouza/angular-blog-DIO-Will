@@ -1,4 +1,4 @@
-import { Component, OnInit, } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {dataFake} from '../../data/dataFake'
 
@@ -7,11 +7,12 @@ import {dataFake} from '../../data/dataFake'
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
+
 export class ContentComponent implements OnInit {
 
   contentPhotoCover:string = ""
   contentTitle:string = ""
-  content:string = ""
+  content:any = ""
   private id:string | null = "0"
 
   constructor(

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
+import { gestCard } from 'src/app/data/gestCard';
 
 @Component({
 	selector: 'app-small-card',
@@ -8,19 +9,26 @@ import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 	providers: [NgbModalConfig, NgbModal],
 })
   
-export class SmallCardComponent {
+export class SmallCardComponent implements OnInit {
 	
-	@Input()
+	
 	modalContent:string =""
+
 	@Input()
 	modalTitle:string =""
 	@Input()
 	buttonTitle:string =""
-		
+	@Input()
+	contentData:string | null = ""
+
+	
 	
 	constructor(
+		
 		config: NgbModalConfig,
 		private modalService: NgbModal,
+		
+				
 	) {
 		// customize default values of modals used by this component tree
 		config.backdrop = 'static';
@@ -32,5 +40,16 @@ export class SmallCardComponent {
 
 	}
 
+	ngOnInit(): void {
+
+		this.setValuesToComponent(this.contentData)
+
+	}
+
+	setValuesToComponent(contentData:string | null) {
+		const result = gestCard.filter((article) => article.contentData === contentData)[0]
+			this.modalContent = result.text
+
+	}
 
 }
